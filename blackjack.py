@@ -26,6 +26,8 @@ while not game_finished:
                 if wager_amount <= player.wallet:
                     player.wallet -= wager_amount
                     break
+                elif wager_amount <= 0:
+                    print("Invalid Wager")
             break
 
     if game_finished == True:
