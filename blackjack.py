@@ -54,7 +54,7 @@ while not game_finished:
         else:
             player.print_hand()
             player_decision = input(
-                "Would you like to Hit ('H') or Stand ('S')")
+                "Would you like to Hit ('H') or Stand ('S') ")
             if player_decision.lower() == 'h':
                 dealer.deal(player)
                 print("Your card is ", player.hand.cards_in_hand[-1])
