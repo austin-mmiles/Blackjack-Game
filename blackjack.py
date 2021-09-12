@@ -76,15 +76,15 @@ while not game_finished:
         input("Press any Key to Continue")
     elif blackjack:
         bet = wager_amount * 2.5
-        print("Winner Winner Chicken Dinnner!")
+        print("Winner Winner Chicken Dinnner! \n")
     elif dealer_hand_value > 21 or dealer_hand_value < player_hand_value:
         bet = wager_amount * 2
         print("Winner!")
-        input("Press any Key to Continue")
+        input("Press any Key to Continue \n")
     elif dealer_hand_value == player_hand_value:
         bet = wager_amount
         print("Its a push!")
-        input("Press any Key to Continue")
+        input("Press any Key to Continue \n")
     elif dealer_hand_value > player_hand_value:
         print("Dealer wins")
-        input("Press any Key to Continue")
+        input("Press any Key to Continue \n")
